@@ -19,6 +19,17 @@ This mod allows to place buildings off-grid and also do fine rotation when holdi
         * Hold the "Ignore Grid" key to move the grid to the cursor location (Defaults to Shift)
         * Hold the "Ignore Grid" + "Rotation" keys to rotate the build grid (Defaults to R and the arrow keys)
 
+## Changelog
+
+### [v0.1.1](https://dsp.thunderstore.io/package/Raptor/OffGridConstruction/0.1.1/)
+* Fix Thunderstore dependency list
+
+### [v0.1.0](https://dsp.thunderstore.io/package/Raptor/OffGridConstruction/0.1.0/)
+* Added ability to move and rotate the build grid freely
+
+### [v0.0.1](https://dsp.thunderstore.io/package/Raptor/OffGridConstruction/0.0.1/)
+* Initial release allowing all buildings to be placed off-grid
+
 ## Contact / Feedback / Bug Reports
 
 You can either find me on the DSP Discord's #modding channel  
