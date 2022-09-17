@@ -1,0 +1,9 @@
+{
+  "name": "OffGridConstruction",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/Velociraptor115-DSPModding/OffGridConstruction",
+  "description": "Place buildings off-grid and move the build grid around",
+  "dependencies": [
+    "xiaoye97-BepInEx-5.4.11"
+  ]
+}
