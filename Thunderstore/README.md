@@ -21,6 +21,9 @@ This mod allows to place buildings off-grid and also do fine rotation when holdi
 
 ## Changelog
 
+### [v0.1.2](https://dsp.thunderstore.io/package/Raptor/OffGridConstruction/0.1.2/)
+* Fix bug when copying a blueprint with a rotated build grid
+
 ### [v0.1.1](https://dsp.thunderstore.io/package/Raptor/OffGridConstruction/0.1.1/)
 * Fix Thunderstore dependency list
 

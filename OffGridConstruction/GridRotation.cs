@@ -304,8 +304,10 @@ public static class GridRotationPatches
     
     var methodsToIntercept = new Dictionary<MethodInfo, MethodInfo>
     {
-      { AccessTools.PropertyGetter(typeof(Vector3), nameof(Vector3.normalized)),
-        AccessTools.Method(typeof(GridRotationPatches), nameof(InterceptNormalizedGetter)) }
+        { AccessTools.PropertyGetter(typeof(Vector3), nameof(Vector3.normalized)),
+          AccessTools.Method(typeof(GridRotationPatches), nameof(InterceptNormalizedGetter)) }
+      , { AccessTools.Method(typeof(Maths), nameof(Maths.SphericalRotation)),
+          AccessTools.Method(typeof(GridRotationPatches), nameof(InterceptSphericalRotatioOutput)) }
     };
 
     foreach (var kvp in methodsToIntercept)
@@ -321,6 +323,11 @@ public static class GridRotationPatches
     }
 
     return matcher.InstructionEnumeration();
+  }
+
+  public static Quaternion InterceptSphericalRotatioOutput(Vector3 pos, float angle)
+  {
+    return GridRotation.PostfixPatch(Maths.SphericalRotation(pos, angle));
   }
 
   public static void InterceptGetMinimumGratBoxPrefix(Vector3 _npos, ref BPGratBox _gratbox)
